@@ -20,8 +20,7 @@ def get_app_data_dir():
     # Get the path for user-specific data
     data_dir = dirs.user_data_dir
 
-    # Create the directory if it doesn't exist.
-    # The `exist_ok=True` flag prevents an error if the directory is already there.
+   
     os.makedirs(data_dir, exist_ok=True)
 
     return data_dir
